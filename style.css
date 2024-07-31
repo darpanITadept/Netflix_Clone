@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/21a8ba09-4a61-44f8-8e2e-70e949c00c6f/6678e2ea-85e8-4db2-b440-c36547313109/IN-en-20240722-POP_SIGNUP_TWO_WEEKS-perspective_WEB_3457a8b1-284d-4bb5-979e-2a2e9bb342b3_large.jpg");
+  height: 80vh;
+  background-size: max(1200px, 100vw);
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.main .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 77vw;
+  margin: auto;
+  height: 95px;
+  width: 77vw;
+}
+
+nav img {
+  width: 150px;
+  position: relative;
+  z-index: 10;
+}
+
+.btn_nav {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.btn_lang {
+  display: flex;
+  background-color: transparent;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+  border: 0.1px solid white;
+  border-radius: 5px;
+}
+
+.btn_signIn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 77px);
+  color: white;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  position: relative;
+  gap: 24px;
+  padding: 0 30px;
+}
+
+/* > this symbol is for the immediate first child */
+.title > :first-child {
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+}
+
+/* > this symbol is for the immediate second child */
+.title > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* > this symbol is for the immediate third child */
+.title > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.title input {
+  border: 1px solid rgb(71, 70, 70);
+  padding: 0px 0px 0px 17px;
+  height: 49px;
+  width: 350px;
+  background-color: transparent;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.title input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+input:focus {
+  color: white;
+  opacity: 0.7;
+  border: 2px solid green;
+  outline: none;
+}
+
+.title button {
+  padding: 15px 50px 15px 50px;
+
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  border-radius: 4px;
+}
+
+.title_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.separation {
+  width: 100vw;
+  height: 9px;
+  background-color: rgb(31, 30, 30);
+}
+
+.posterGrids {
+  width: 100vw;
+  height: 580px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu;
+  gap: 5px;
+}
+
+.statement :nth-child(1) {
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.statement > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.statement > :nth-child(3) {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.tvImageContainer {
+  position: relative;
+}
+
+.tvImage {
+  position: relative;
+  z-index: 2;
+}
+
+.tvVideoContainer {
+  position: absolute;
+  z-index: 1;
+  top: 91px;
+}
+
+#tvVideo {
+  width: 631px;
+  height: 263px;
+}
+
+.phoneImage {
+  height: 400px;
+}
+
+.phoneAnimationContainer {
+  position: relative;
+}
+
+.strangerThingCard {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  position: absolute;
+  top: 280px;
+  left: 120px;
+  z-index: 2;
+  width: 288px;
+  height: 94px;
+  border: 2px solid rgb(89, 88, 88);
+  color: white;
+  border-radius: 15px;
+  gap: 25px;
+  background-color: black;
+}
+
+.strangerThingImg {
+  /* height: fit-content; */
+  height: 80%;
+  padding-left: 10px;
+}
+
+.strangerThingCardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.strangerThingCardText :nth-child(1) {
+  color: rgb(255, 255, 255);
+  display: block;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.strangerThingCardText :nth-child(2) {
+  color: rgb(0, 113, 235);
+  display: block;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.imacVideoContainer{
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    left: 120px;
+}
+
+#imacVideo {
+    width: 401px;
+    height: 297px;
+}
+
+.childrenBannerImage{
+  height: 420px;
+}
